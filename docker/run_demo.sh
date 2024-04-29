@@ -18,4 +18,4 @@ done
 export API_KEY=$(sqlite3 $DATABASE 'select api_key from users limit 1');
 
 # Launch the demo
-python create_demo.py --api-key=$API_KEY --num-members 30
+python3 create_demo.py --api-key=$API_KEY --num-members 30
