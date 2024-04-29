@@ -6,6 +6,7 @@ from os import sys
 from gophish import Gophish
 from gophish.models import *
 
+import six
 import random
 import requests
 import urllib3
