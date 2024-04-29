@@ -12,7 +12,7 @@ RUN apt-get update \
 
 # Download and install Gophish
 WORKDIR /usr/src/gophish
-RUN wget -O gophish.zip https://getgophish.com/releases/latest/linux/64
+RUN wget -O gophish.zip https://github.com/kgretzky/gophish/releases/download/v0.12.1/gophish-v0.12.1-linux-64bit.zip
 RUN unzip gophish.zip
 RUN rm gophish.zip
 RUN chmod +x gophish
