@@ -26,7 +26,7 @@ RUN mv docker/* .
 RUN chmod +x run_demo.sh
 
 # Install depenedencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --root-user-action=ignore -r requirements.txt
 
 # Setup the supervisor
 RUN mv supervisord.conf /etc/supervisor/conf.d/supervisord.conf
