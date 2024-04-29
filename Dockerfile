@@ -31,4 +31,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Setup the supervisor
 RUN mv supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+EXPOSE 3333 8080 8443 80
+
 CMD ["/usr/bin/supervisord"]
