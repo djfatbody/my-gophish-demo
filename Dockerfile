@@ -26,7 +26,7 @@ RUN mv docker/* .
 RUN chmod +x run_demo.sh
 
 # Install depenedencies
-RUN pip install --no-cache-dir --root-user-action=ignore -r requirements.txt
+RUN pip install --no-cache-dir --root-user-action=ignore aiosmtpd astroid atpublic certifi chardet Faker flake8 gophish idna isort lazy-object-proxy mccabe pycodestyle pyflakes pylint python-dateutil requests six text-unidecode typed-ast urllib3 wrapt yapf
 
 # Setup the supervisor
 RUN mv supervisord.conf /etc/supervisor/conf.d/supervisord.conf
