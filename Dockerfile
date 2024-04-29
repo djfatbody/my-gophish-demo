@@ -4,7 +4,6 @@ RUN apt-get update \
     && apt-get install -y \
     git \
     wget \
-    python-six \
     sqlite3 \
     supervisor \
     unzip \
